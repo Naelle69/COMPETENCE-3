@@ -58,12 +58,6 @@ height: auto;
 overflow-y: hidden;
 }
 
-Boutton4{
-    display: none;
-    position: fixed;
-}
-
-
 /* TABLETTE */
 @media screen and (min-width:481px) and (max-width:768px){
 

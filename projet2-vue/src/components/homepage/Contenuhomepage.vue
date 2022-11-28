@@ -46,6 +46,7 @@
          -->
         <Boutton2  />
       </div>
+       <Boutton4 />
 
       <div class="offredelasemaine w-full">
         <iframe class="videohompepage" src="https://www.youtube.com/embed/ez4zQr6CSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -65,6 +66,7 @@
 // @ is an alias to /src
 import Boutton1 from '@/components/bouttons/Boutton1.vue'
 import Boutton2 from '@/components/bouttons/Boutton2.vue'
+import Boutton4 from '@/components/bouttons/Boutton4.vue'
 import axios from 'axios'
 
 export default {
@@ -72,12 +74,14 @@ name: 'Contenuhomepage',
 components: {
 Boutton1,
 Boutton2,
+Boutton4, 
 },
 
 data(){
     return {
         boutton1:[],
         boutton2:[],
+        boutton4:[],
         errors: [],
     }
 },
@@ -87,8 +91,9 @@ created() {
 axios.get('http://localhost:8080/plats.json')
 .then(response => {
   // JSON responses are automatically parsed
-  this.boutton1 = response.data.boutton1.
+  this.boutton1 = response.data.boutton1
   this.boutton2 = response.data.boutton2
+  this.boutton4 = response.data.boutton4
 })
 .catch(e => {
   this.errors.push(e)

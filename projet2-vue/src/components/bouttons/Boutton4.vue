@@ -2,7 +2,6 @@
         <!-- Back to top button -->
     <button class="boutton4">
         <img src="@/assets/images/svg-icones/fleche1.svg" width="30"/>
-        <router-link to="/Boutton4">Blog conseils</router-link>
     </button>
     
 </template>

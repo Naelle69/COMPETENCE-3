@@ -7,6 +7,13 @@ const routes = [
     name: 'Accueil',
     component: Accueil
   },
+
+ /*  {
+    path: '/Contenuhomepage',
+    name: 'Contenuhomepage',
+    component: () => import('../bouttons/Boutton4.vue')
+  }, */
+
   {
     path: '/Notreblog',
     name: 'Notreblog',
@@ -15,11 +22,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Blog" */ '../views/Blog.vue')
   },
-  {
-    path: '/Boutton4',
-    name: 'Boutton4',
-    component: Accueil
-  }
+ 
 ]
 
 const router = createRouter({

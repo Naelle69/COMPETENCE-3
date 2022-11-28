@@ -2,7 +2,6 @@
     
     <div class="h-auto extras mt-5">
         <h3 class="h3vert ml-4 sm:mx-4 mb-24"> Nos extras </h3>
-        <Boutton4 /> <router-link to="/Notreblog">Blog conseils</router-link>
     </div>
 
     <div class="nosextras h-80 mx-4">
@@ -30,18 +29,6 @@
     </div>
 
 </template>
-
-<script>
-// @ is an alias to /src
-import Boutton4 from '@/components/bouttons/Boutton4.vue'
-
-export default {
-name: 'Nosextras',
-components: {
-Boutton4,
-}
-}
-</script>
 
 
 <style scoped>
